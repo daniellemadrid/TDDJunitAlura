@@ -21,7 +21,7 @@ public class BonusServiceTest {
         return new Funcionario("Rodrigo", LocalDate.now(), salario);
     }
 
-    @Test
+    @Test 
     void bonusDeveriaSerZeroParaFuncionarioComSalarioMuitoAlto() {
         try {
             service.calcularBonus(criarFuncionario(new BigDecimal("25000")));
